@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="calculator">
+	<!-- Display area at the top -->
+	<div class="top">
+		<span class="clear" data-value="C">C</span>
+		<div class="input"></div>
+	</div>
+	
+	<!-- All the buttons -->
+	<div class="keys">
+		<!-- Row 1: 7, 8, 9, divide -->
+		<span data-value="7">7</span>
+		<span data-value="8">8</span>
+		<span data-value="9">9</span>
+		<span class="operator" data-value="/">/</span>
+		
+		<!-- Row 2: 4, 5, 6, multiply -->
+		<span data-value="4">4</span>
+		<span data-value="5">5</span>
+		<span data-value="6">6</span>
+		<span class="operator" data-value="*">x</span>
+		
+		<!-- Row 3: 1, 2, 3, subtract -->
+		<span data-value="1">1</span>
+		<span data-value="2">2</span>
+		<span data-value="3">3</span>
+		<span class="operator" data-value="-">-</span>
+		
+		<!-- Row 4: 0, decimal, equals, add -->
+		<span data-value="0">0</span>
+		<span data-value=".">.</span>
+		<span class="equals" data-value="=">=</span>
+		<span class="operator" data-value="+">+</span>
+	</div>
+</div>
+
+<!-- Link to JavaScript file -->
+<script src="app.js"></script>
+
+</body>
+</html>

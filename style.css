@@ -1,0 +1,89 @@
+ /*Day1 of WebLearning challenge  */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+}
+html {
+  height: 100%;
+  background: lightgray;
+}
+#calculator {
+  width: 300px;
+  background: linear-gradient(#de271e, #0ba4d7);
+  margin: 50px auto;
+}
+.top {
+  overflow: hidden;
+}
+.top span.clear {
+  float: left;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.top span.clear:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Display screen */
+.top .input {
+  float: right;
+  width: 225px;
+  height: 75px;
+  padding-right: 20px;
+  line-height: 75px;
+  text-align: right;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Button container */
+.keys {
+  overflow: hidden;
+}
+
+/* All buttons */
+.keys span {
+  float: left;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Operator buttons (+, -, x, /) */
+.keys span.operator {
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+  border-right: 0;
+}
+
+/* Equals button */
+.keys span.equals {
+  color: #888e5f;
+}
+
+/* Button hover effects */
+.keys span:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.keys span.equals:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
